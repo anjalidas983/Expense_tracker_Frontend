@@ -1,0 +1,70 @@
+.dashboard-container {
+
+    max-width: 200px;
+    height: 90vh;
+    /* margin:5px; */
+   
+}
+
+.contact-image {
+   height: 90px;
+   width: 90px;
+  
+}
+
+.image-container {
+   
+   text-align: center;
+
+}
+
+.expenseHistory-link{
+    text-decoration: none;
+    font-size: 16px;
+   
+    left:10%;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.reportPage-link {
+
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+   
+
+}
+
+.addexpense-link {
+
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+
+    
+
+}
+
+.addexpense-container {
+    position: relative;
+    margin-top: 260px;
+    align-items: center;
+}
+
+
+
+.dashboard {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+}

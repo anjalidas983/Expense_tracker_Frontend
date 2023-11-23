@@ -1,0 +1,43 @@
+/* form {
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    padding:30px ;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    border: 1px solid #f7f7f7;
+
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+button {
+    background-color: rgb(36, 36, 149);
+    color: white;
+    padding:10px 20px ;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+
+}
+
+button:hover{
+    background-color: rgb(65, 65, 182);
+} */
+
+.link {
+
+    text-decoration: none;
+    font-weight: bold;
+    color:#0056b3 ;
+   
+}

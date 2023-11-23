@@ -1,0 +1,40 @@
+/* HomePage.css */
+.home {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start;
+    min-height: 100vh; 
+  }
+  
+  .content-container {
+    display: flex;
+    
+    width: 100%; 
+  }
+  
+  .block {
+    margin: 5px;
+    padding: 20px; 
+    border: 1px solid #ccc; }
+  
+  .left-block {
+    flex: 1; 
+    background-color:white; 
+    box-shadow:5px 5px 10px #888888;
+    
+  }
+  
+  .center-block {
+    flex: 3;
+    background-color:white; 
+    box-shadow: 5px 5px 10px #888888;
+    
+  }
+  
+  .right-block {
+    flex: 3; 
+    background-color: white ;
+    box-shadow: 5px 5px 10px #888888;
+  }
+  

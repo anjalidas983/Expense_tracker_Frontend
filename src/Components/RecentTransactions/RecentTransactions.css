@@ -1,0 +1,59 @@
+
+.transaction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+    
+  }
+
+
+  
+  
+  .transaction-item {
+    border: 1px solid #ccc;
+    padding: 1px;
+    border-radius: 5px;
+    background-color:white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition:transform 0.3s ease-in-out
+  }
+
+  .transaction-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .transaction-item div {
+    margin: 5px 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+ 
+ button:hover{
+    background-color:white;
+ }
+
+ .button-container {
+    text-align: center;
+ }
+
+ .expense-grid {
+
+  text-align: center;
+  font-weight: bold;
+ }
+
+ .editBlock {
+  color: rgb(36, 36, 149);
+  background-color: white;
+ }
+
+ .editBlock:hover {
+  background-color: white;
+ }
+
+ .iconStyle {
+  font-size: 20px;
+ }

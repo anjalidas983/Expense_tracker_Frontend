@@ -1,23 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Login from './Pages/Login.js';
+import { BrowserRouter,Route,Routes} from 'react-router-dom';
+import Signup from './Pages/Signup.js';
+import Home from './Pages/Home'
+import AddExpense from './Components/AddExpense/AddExpense';
+import ExpenseHistory from './Components/ExpenseHistory/ExpenseHistory'
+import ExpenseBarChart from './Components/YearlyExpenseBarChart/ExpenseBarChart.js'
+import EditTransaction from './Components/EditTransaction/EditTransaction.js';
+import { AuthProvider } from './AuthContext';
+import PasswordResetForm from './Components/PasswordResetForm/PasswordResetForm.js';
+import PasswordResetConfirm from './Components/PasswordResetConfirmForm/PasswordResetConfirm.js';
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+     <AuthProvider>
+      <Routes>
+        <Route exact path='/' element={<Login/>}/> 
+        <Route  path='/signup' element={<Signup/>}/>
+        <Route  path='/home' element={<Home/>}/>
+        <Route  path='/add-expense' element={<AddExpense/>}/>
+        <Route  path='/expense-history' element={<ExpenseHistory/>}/>
+        <Route  path='/yearly-expense' element={<ExpenseBarChart/>}/>
+        <Route  path='/edit-transaction/:id' element={<EditTransaction/>}/>
+        <Route path='/password-reset' element={<PasswordResetForm/>}/>
+        <Route path='/confirm-reset-password/:uidb64/:token/' element={<PasswordResetConfirm/>}/>
+        
+      </Routes>
+      </AuthProvider>
+      </BrowserRouter>
+
+
     </div>
   );
 }

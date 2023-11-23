@@ -1,0 +1,36 @@
+.loginpage-container {
+    display: flex; 
+    height: 90vh;
+    overflow: hidden;
+
+}
+.image-container {
+    flex: 1; 
+    position: relative;
+  }
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    
+  }
+  
+  .login-form {
+    flex: 1; /* Take up 50% of the width */
+    display: flex; /* Use flexbox for vertical centering */
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+  }
+
+  .text-container {
+    position: absolute;
+    top:100px;
+    left: 45%;
+
+  }

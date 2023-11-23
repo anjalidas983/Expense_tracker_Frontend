@@ -1,0 +1,114 @@
+.containerPage {
+    display: flex;
+    align-items: normal;
+    margin-left: 50px;
+    height: 480px;
+   
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display three items in a row */
+    gap: 5px;
+   
+  }
+  
+  .expense-card {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .expense-card:hover {
+    transform: scale(1.05);
+  }
+
+
+
+  .expense-card p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+  .icon-style {
+    text-align: center;
+    
+  }
+  
+  .historyPage {
+    display: flex;
+    margin: 10px;
+   
+   
+  }
+
+  .leftDashboard {
+    width: 220px;
+    box-shadow: 5px 5px 10px #888888;
+    padding-top: 6px;
+    margin: 2px;
+    padding-left: 3px;
+
+  }
+
+  .rightHistory {
+    flex-grow: 1;
+    box-shadow: 5px 5px 10px #888888;
+  }
+
+
+  .filterContainer {
+    margin-left: 170px;
+    display: flex;
+    margin-top: 3px;
+    
+  }
+
+ 
+  .filterItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filterItem label {
+    width: 53%;
+    margin-right: 6px; 
+  }
+
+ 
+  .filterItem input {
+    margin-right: 9px;
+  }
+
+  
+
+  .buttonStyle {
+
+    color:rgb(28, 28, 134);
+    background-color:white;
+    font-size: 20px;
+    padding:5px;
+  }
+  .buttonStyle:hover {
+    background-color:white;
+  }
+
+
+  .paginationBlock {
+    position:fixed;
+    margin-top:5px;
+    margin-left: 390px;
+   
+    
+  }
+
+  .buttonContainer {
+    padding: 5px;
+
+  }
